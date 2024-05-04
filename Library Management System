@@ -1,0 +1,19 @@
+class Library:
+  def __init__(self):
+    self.noofbooks=0
+    self.books=[]
+
+  def addbook(self,book):
+    self.books.append(book)
+    self.noofbooks=len(self.books)
+
+  def show(self):
+    print(f"The library has {self.noofbooks} books. The books are")
+    for book in self.books:
+      print(book)
+
+l1=Library()
+l1.addbook("Harry Potter")
+l1.addbook("Dairy of Wimpy Kid")
+l1.addbook("Hellen killer")
+l1.show()
